@@ -196,10 +196,6 @@ body {
 .el-message {
   --el-message-min-width: auto;
 }
-// rem转换
-@function rem($px) {
-  @return $px/32 * 1rem;
-}
 .el-icon {
   font-size: 16px;
 }

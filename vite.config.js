@@ -36,9 +36,7 @@ export default defineConfig({
         assetFileNames: 'assets/[ext]/[name]-[hash].[ext]',
         manualChunks: {
           'chunk-vendor': ['react', 'react-dom', 'redux', 'react-redux', 'react-router-dom'],
-          'chunk-echarts': ['echarts'],
-          'chunk-react-photo-view': ['react-photo-view'],
-          'chunk-brafteditor': ['braft-editor'],
+          'chunk-element': ['element-plus'],
         },
       },
     },

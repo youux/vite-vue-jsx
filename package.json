@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "jest",
+    "test": "jest --env=node",
     "lint:js": "eslint --ext .vue src",
     "prepare": "husky install"
   },

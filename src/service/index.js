@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 const Http = axios.create({
-  baseURL: import.meta.env.VITE_BASE_URL,
+  baseURL: import.meta.env.VITE_BASE_URL, // 接口地址，可以从环境变量中获取
   headers: { 'Content-Type': 'application/json' }
 })
 

@@ -33,19 +33,16 @@ export default {
 
     return () => (
       <>
-        <p>{common.title}</p>
+        <div>这里是Pinia返回的数据：{common.title}</div>
+        <hr />
         <ul className={styles.list}>
-          <li>
-            {
-              list1.map(item => (<div key={item}>{item}</div>))
-            }
-          </li>
-          <li>-------</li>
-          <li>
-            {
-              list2.map(item => (<div key={item}>{item}</div>))
-            }
-          </li>
+          {
+            list1.map(item => (<li key={item}>{item}</li>))
+          }
+          <hr />
+          {
+            list2.map(item => (<li key={item}>{item}</li>))
+          }
         </ul>
       </>
     )

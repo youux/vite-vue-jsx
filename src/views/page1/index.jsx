@@ -34,6 +34,7 @@ export default {
           list1.map(item => (<div key={item}>{item}</div>))
         }
       </li>
+      <li>-------</li>
       <li>
         {
           list2.map(item => (<div key={item}>{item}</div>))

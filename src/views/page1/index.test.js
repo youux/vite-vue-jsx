@@ -1,7 +1,7 @@
-import { mount } from '@vue/test-utils'
-import Page1 from './index.jsx'
+import { useList } from './data.js'
 
 test('测试1', () => {
-  const wrapper = mount(Page1)
-  expect(wrapper.html()).toContain('这里是Pinia返回的数据：')
+  useList()
+  // const wrapper = mount()
+  // expect(text()).toContain('这里是Pinia返回的数据：')
 })

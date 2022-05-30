@@ -5,7 +5,12 @@ const routes = [
     path: '/',
     name: 'page',
     component: () => import('../views/page1')
-  }
+  },
+  // {
+  //   path: '/page',
+  //   name: 'page1',
+  //   component: () => import('../views/page2')
+  // },
 ]
 
 const router = createRouter({

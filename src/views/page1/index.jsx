@@ -1,7 +1,7 @@
 import { } from 'vue'
 import styles from './index.module.scss'
 
-import { useList } from './data'
+import Http from 'service/index'
 
 export default {
   setup () {

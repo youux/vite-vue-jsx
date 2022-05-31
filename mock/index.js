@@ -10,7 +10,15 @@ export default [
         },
         {
           code: 200,
-          data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+          'data|10': [
+            {
+              nickname: '@cname',
+              age: '@integer(10-100)',
+              uid: '@id',
+              country: '@county(true)',
+              email: '@email',
+            }
+          ]
         },
         {
           code: 200,

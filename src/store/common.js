@@ -8,7 +8,7 @@ export const useCommonStore = defineStore({
         {
           id: '1',
           label: 'page1',
-          path: '/'
+          path: '/page1'
         },
         {
           id: '2',

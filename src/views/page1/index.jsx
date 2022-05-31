@@ -11,16 +11,19 @@ export default {
 
     return () => (
       <>
+        <p>mock数据演示：</p>
+        <el-table data={list1} border>
+          <el-table-column label="nickname" prop="nickname"></el-table-column>
+          <el-table-column label="age" prop="age"></el-table-column>
+          <el-table-column label="uid" prop="uid"></el-table-column>
+          <el-table-column label="country" prop="country"></el-table-column>
+          <el-table-column label="email" prop="email"></el-table-column>
+        </el-table>
+
         <ul className={styles.list}>
           <li>
             {
-              list1.map(item => (<div key={item}>{item}</div>))
-            }
-          </li>
-          <li>-------</li>
-          <li>
-            {
-              list2.map(item => (<div key={item}>{item}</div>))
+              list2.map(item => (<p key={item}>{item}</p>))
             }
           </li>
         </ul>

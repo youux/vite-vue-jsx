@@ -20,10 +20,3 @@ git push origin 分支名
 
 ## .eslintrc.js
 **.eslintrc.js为校验规则，无特殊情况，勿动**
-
-
-# jest 舍弃
-**需要在node环境下运行**
-
-# Mocha
-学习

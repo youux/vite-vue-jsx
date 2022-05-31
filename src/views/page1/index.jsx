@@ -28,18 +28,23 @@ export default {
       getList({ type: 2 })
     })
 
-    return () => <ul className={styles.list}>
-      <li>
-        {
-          list1.map(item => (<div key={item}>{item}</div>))
-        }
-      </li>
-      <li>-------</li>
-      <li>
-        {
-          list2.map(item => (<div key={item}>{item}</div>))
-        }
-      </li>
-    </ul>
+    return () => (
+      <>
+        <p>{common.title}</p>
+        <ul className={styles.list}>
+          <li>
+            {
+              list1.map(item => (<div key={item}>{item}</div>))
+            }
+          </li>
+          <li>-------</li>
+          <li>
+            {
+              list2.map(item => (<div key={item}>{item}</div>))
+            }
+          </li>
+        </ul>
+      </>
+    )
   },
 }

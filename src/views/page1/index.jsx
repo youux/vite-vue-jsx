@@ -1,18 +1,16 @@
 import { } from 'vue'
 import styles from './index.module.scss'
 
-import { useCommonStore } from 'store/common'
-
+// 接口服务
+import Http from 'service/index'
 import { useList } from './data'
 
 export default {
   setup () {
-    const common = useCommonStore()
-    const { list1, list2 } = useList()
+    const { list1, list2 } = useList(Http)
 
     return () => (
       <>
-        <p>{common.title}</p>
         <ul className={styles.list}>
           <li>
             {

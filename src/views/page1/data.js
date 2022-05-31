@@ -1,7 +1,6 @@
 import { reactive, watchEffect } from 'vue'
-import Http from './../../service/index'
 
-export const useList = () => {
+export const useList = (Http) => {
   const list1 = reactive([])
   const list2 = reactive([])
 

@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 
 import App from './App.vue'
 import router from './router'
-import { createPinia } from 'pinia'
+import store from './store'
 
 // elementUI
 import ElementPlus from 'element-plus'
@@ -21,7 +21,7 @@ for (const [key, value] of Object.entries(component)) {
   app.component(key, value)
 }
 
-app.use(createPinia())
+app.use(store)
 app.use(router)
 app.use(ElementPlus)
 

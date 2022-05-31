@@ -9,12 +9,7 @@ export const useCommonStore = defineStore({
           id: '1',
           label: 'page1',
           path: '/page1'
-        },
-        {
-          id: '2',
-          label: 'page2',
-          path: '/page2'
-        },
+        }
       ]
     }
   },
